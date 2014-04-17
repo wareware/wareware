@@ -1,0 +1,67 @@
+// ==========================================================================
+// font
+// --------------------------------------------------------------------------
+=main-font
+  font-family: $main-font
+=helvetica
+  font-family: $helvetica
+=num-font
+  font-family: $num-font
+=num-font-logo
+  +num-font
+  letter-spacing: 0
+=fw-400
+  font-weight: 400
+=fw-600
+  font-weight: 600
+=fw-200
+  font-weight: 200
+=fw-300
+  font-weight: 300
+=fw-700
+  font-weight: 700
+
+// ==========================================================================
+// misc cheat
+// --------------------------------------------------------------------------
+=norepeat
+  background-repeat: no-repeat
+
+=relative
+  position: relative
+
+=absolute
+  position: absolute
+
+=none
+  display: none
+
+=block
+  display: block
+
+=content
+  content: ""
+  display: block
+
+=nowrap
+  overflow: hidden
+  white-space: nowrap
+  text-overflow: ellipsis
+
+=hidden
+  overflow: hidden
+
+=opacity($op: .25)
+  filter: alpha(opacity= $op * 100)
+  -moz-opacity: $op
+  opacity: $op
+
+=placeholder-color($color)
+  &:-moz-placeholder
+    color: $color
+  &::-webkit-input-placeholder
+    color: $color
+
+=break-word
+  word-wrap: break-word
+  word-break: break-word

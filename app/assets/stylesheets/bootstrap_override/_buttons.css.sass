@@ -1,0 +1,21 @@
+.btn
+  +transition-duration(.3s)
+  font-size: 120%
+  i
+    font-size: 120%
+    margin-right: 5px
+    color: rgba(white, .5)
+    +relative
+  &:focus
+    outline: none
+  &.btn-default
+    i
+      color: rgba($sub-text-color, .3)
+  &.disabled
+    +opacity(.4)
+  &.btn-primary
+    border: 1px solid rgba(0,0,0,.3)
+    +box-shadow(rgba(white, .3) 0 1px 0 inset)
+  &.btn-warning, &.btn-danger
+    border: 1px solid rgba(0,0,0,.3)
+    +box-shadow(rgba(white, .4) 0 1px 0 inset)

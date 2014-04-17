@@ -1,0 +1,13 @@
+en:
+  date:
+    formats:
+      default: "%a %d %b %Y"
+  time:
+    formats:
+      default: "%H:%M %a %d %b %Y"
+      short: "%H:%M"
+    range: "%{begin_at} - %{end_at}"
+    ago: ' ago'
+  site_info:
+    title: 'Genuineblue'
+    description: 'Genuineblue'

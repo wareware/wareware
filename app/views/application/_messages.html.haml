@@ -1,0 +1,9 @@
+- flash.each_with_index do |message, i|
+  - name = message.first
+  - msg = message.last
+  - if msg.is_a?(String)
+    %div{class: "alert alert-#{name == 'notice'? "success" : "danger"}", data: {alert: {id: "alert-#{i}"}}}
+      .container
+        %i.fa{class: "fa-#{name == 'notice'? 'info-circle' : 'warning'}"}
+        %a.close{'data-target' => "[data-alert-id=alert-#{i}]", "data-dismiss" => "alert", 'aria-hidden' => 'true'} &times;
+        = content_tag :div, msg, :id => "flash_#{name}"

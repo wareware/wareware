@@ -1,0 +1,11 @@
+en:
+  activemodel:
+    errors:
+      messages:
+        invalid_email_address: 'does not appear to be a valid E-mail address'
+  activerecord:
+    models:
+    attributes:
+    errors:
+      models:
+  enumerize:

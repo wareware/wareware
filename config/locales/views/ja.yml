@@ -1,0 +1,13 @@
+ja:
+  date:
+    formats:
+      default: "%Y年%m月%d日(%a)"
+  time:
+    formats:
+      default: "%Y年%m月%d日(%a) %H:%M"
+      short: "%H:%M"
+    range: "%{begin_at} 〜 %{end_at}"
+    ago: '前'
+  site_info:
+    title: 'Genuineblue'
+    description: 'Genuineblue'

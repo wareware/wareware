@@ -1,0 +1,41 @@
+html
+  height: 100%
+body
+  position: relative
+  min-height: 100%
+  padding-bottom: $footer-height
+
+input[type=text], input[type=email], input[type=password], textarea
+  +transition-duration(.3s)
+  background-color: rgba(black, 0.1)
+  border: 1px solid rgba(black, 0.1)
+
+.no-border
+  border-color: transparent
+
+.section
+  margin-bottom: $margin
+  p
+    margin-bottom: $margin-quater
+
+.main-content
+  padding-bottom: $margin * 3
+
+.btn-accent
+  background-color: $accent-color
+  +button-variant($white, $accent-color, $accent-color)
+
+.footer
+  color: $sub-text-color
+  background-color: $footer-color
+  margin-top: $margin
+  padding-top: $margin-quater
+  height: $footer-height
+  position: absolute
+  bottom: 0
+  left: 0
+  width: 100%
+  .copyright
+    display: block
+    text-align: center
+    +num-font

@@ -1,0 +1,4 @@
+ja:
+  simple_form:
+    error_notification:
+      default_message: 'フォームの内容を確認して下さい'

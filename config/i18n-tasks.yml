@@ -1,0 +1,7 @@
+base_locale: en
+locales: [ja]
+
+data:
+  adapter: yaml
+  read:
+    - 'config/locales/**/%{locale}.yml'

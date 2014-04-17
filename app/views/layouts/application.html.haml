@@ -1,0 +1,24 @@
+!!!
+%html
+  %head
+    %meta{content: "width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no", name: "viewport"}
+    %title= content_for?(:title) ? yield(:title) : t('site_info.title')
+    %meta{content: content_for?(:description) ? yield(:description) : t('site_info.description'), name: "description"}
+    %meta{content: "telephone=no", name: "format-detection"}
+    :javascript
+      var rails_env = "#{Rails.env}"
+    = stylesheet_link_tag "application", :media => "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+    = yield(:head)
+    = favicon_link_tag 'apple-touch-icon.png', rel: 'apple-touch-icon', type: 'image/png'
+    = favicon_link_tag
+  %body{class: "#{I18n.locale} #{yield(:body_class)} #{controller_name} #{action_name}"}
+    = render 'navigation'
+    - if content_for?(:page_header)
+      .page-header
+        = yield(:page_header)
+    .main-content
+      = render 'messages'
+      = yield
+    = render 'footer'

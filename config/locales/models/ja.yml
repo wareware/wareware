@@ -1,0 +1,11 @@
+ja:
+  activemodel:
+    errors:
+      messages:
+        invalid_email_address: 'E-mailアドレスの形式が不適切です'
+  activerecord:
+    models:
+    attributes:
+    errors:
+      models:
+  enumerize:
