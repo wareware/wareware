@@ -11,7 +11,7 @@ module ApplicationHelper
   end
 
   def google_map(address, options = {})
-    options.reverse_merge! language: 'ja', region: 'jp'
+    options.reverse_merge! language: I18n.locale.to_s, region: 'jp'
     "https://www.google.com/maps/embed/v1/place?key=#{ENV['GOOGLE_MAP_API_KEY']}&q=#{CGI.escape(address)}&#{options.to_param}"
   end
 end
