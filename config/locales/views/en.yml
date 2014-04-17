@@ -9,5 +9,5 @@ en:
     range: "%{begin_at} - %{end_at}"
     ago: ' ago'
   site_info:
-    title: 'Genuineblue'
-    description: 'Genuineblue'
+    title: 'genuineblue'
+    description: 'genuineblue'
