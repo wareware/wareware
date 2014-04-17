@@ -1,5 +1,11 @@
 # genuineblue tempate application for rails4.1
 
+## Rename application's name
+
+```
+git grep -l 'genuineblue'|xargs sed -i '' 's/genuineblue/your_app_name/g'
+```
+
 ## Setup for development
 
 rename Guardfile.example to Guardfile
