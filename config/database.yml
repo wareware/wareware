@@ -1,13 +1,13 @@
 development: &development
   adapter: postgresql
-  database: genuineblue_development
+  database: Genuineblue_development
   encoding: utf8
 test:
   <<: *development
-  database: genuineblue_test
+  database: Genuineblue_test
 production:
   <<: *development
-  database: genuineblue_production
+  database: Genuineblue_production
 staging:
   <<: *development
-  database: genuineblue_staging
+  database: Genuineblue_staging

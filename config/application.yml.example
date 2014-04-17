@@ -1,17 +1,17 @@
 HOST: 'localhost:3000'
 TWITTER_APP_ID: 'a'
 TWITTER_APP_SECRET: 'b'
-NEW_RELIC_APP_NAME: 'genuineblue'
+NEW_RELIC_APP_NAME: 'Genuineblue'
 GA: 'UA-nnnnnnnn-m'
 test:
   TEST_ASSET_HOST: ''
   # forman
   #TEST_ASSET_HOST: 'http://localhost:3000'
 staging:
-  NEW_RELIC_APP_NAME: 'genuineblue-stg'
+  NEW_RELIC_APP_NAME: 'Genuineblue-stg'
 production:
   BUGSNAG_API_KEY: ''
-  NEW_RELIC_APP_NAME: 'genuineblue'
+  NEW_RELIC_APP_NAME: 'Genuineblue'
   NEWRELIC_DISPATCHER: 'Puma'
-  SESSION_KEY: '_genuineblue_session'
+  SESSION_KEY: '_Genuineblue_session'
   SECRET_TOKEN: 'Be change this to `rake secret` result'

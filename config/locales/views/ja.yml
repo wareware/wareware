@@ -9,5 +9,5 @@ ja:
     range: "%{begin_at} 〜 %{end_at}"
     ago: '前'
   site_info:
-    title: 'genuineblue'
-    description: 'genuineblue'
+    title: 'Genuineblue'
+    description: 'Genuineblue'
