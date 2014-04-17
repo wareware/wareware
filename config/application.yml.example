@@ -3,6 +3,7 @@ TWITTER_APP_ID: 'a'
 TWITTER_APP_SECRET: 'b'
 NEW_RELIC_APP_NAME: 'Genuineblue'
 GA: 'UA-nnnnnnnn-m'
+GOOGLE_MAP_API_KEY: 'your key'
 test:
   TEST_ASSET_HOST: ''
   # forman

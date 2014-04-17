@@ -9,4 +9,9 @@ module ApplicationHelper
       haml_tag('i.fa.fa-check')
     end
   end
+
+  def google_map(address, options = {})
+    options.reverse_merge! language: 'ja', region: 'jp'
+    "https://www.google.com/maps/embed/v1/place?key=#{ENV['GOOGLE_MAP_API_KEY']}&q=#{CGI.escape(address)}&#{options.to_param}"
+  end
 end
