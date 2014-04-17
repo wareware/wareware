@@ -9,5 +9,5 @@ en:
     range: "%{begin_at} - %{end_at}"
     ago: ' ago'
   site_info:
-    title: 'wareware'
+    title: 'wareware.in.net'
     description: 'wareware'
