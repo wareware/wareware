@@ -1,9 +1,9 @@
-# Genuineblue tempate application for rails4.1
+# wareware tempate application for rails4.1
 
 ## Rename application's name
 
 ```
-git grep -l 'Genuineblue'|xargs sed -i '' 's/Genuineblue/your_app_name/g'
+git grep -l 'wareware'|xargs sed -i '' 's/wareware/your_app_name/g'
 ```
 
 ## Setup for development
@@ -43,25 +43,25 @@ $ guard
 ## heroku
 
 ```
-heroku create Genuineblue
-git remote rename heroku Genuineblue
-git push Genuineblue master
+heroku create wareware
+git remote rename heroku wareware
+git push wareware master
 heroku addons:add newrelic
 heroku addons:add pgbackups:auto-month
 heroku addons:add mandrill:starter
-rake figaro:heroku\[Genuineblue\]
+rake figaro:heroku\[wareware\]
 ```
 
 ### staging
 
 ```
-heroku create Genuineblue-stg
-git remote set-url Genuineblue-stg git@heroku.com:Genuineblue-stg.git
-git push Genuineblue master
+heroku create wareware-stg
+git remote set-url wareware-stg git@heroku.com:wareware-stg.git
+git push wareware master
 heroku addons:add newrelic
 heroku addons:add pgbackups:auto-month
 heroku addons:add mandrill:starter
 heroku addons:add mailtrap
 heroku config:set RACK_ENV=staging RAILS_ENV=staging
-rake figaro:heroku\[Genuineblue-stg\]
+rake figaro:heroku\[wareware-stg\]
 ```
