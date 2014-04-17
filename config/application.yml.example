@@ -16,3 +16,4 @@ production:
   NEWRELIC_DISPATCHER: 'Puma'
   SESSION_KEY: '_wareware_session'
   SECRET_TOKEN: 'Be change this to `rake secret` result'
+  HOST: 'wareware.in.net'

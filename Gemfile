@@ -37,6 +37,7 @@ gem 'kaminari'
 
 # Server
 gem 'puma'
+gem 'rack-rewrite'
 
 group :doc do
   gem 'sdoc', '~> 0.4.0'
