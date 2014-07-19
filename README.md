@@ -1,4 +1,4 @@
-# wareware tempate application for rails4.1
+# wareware template application for rails4.1
 
 ## Rename application's name
 
